@@ -14,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 class TestObjectWithGetter {
 
     @Test
-    void given_objectContainsGetter_when_serializeWithFailOnEmptyBeansFalse_then_success() throws JsonProcessingException {
+    void given_objectWithGetter_when_serializeWithFailOnEmptyBeansFalse_then_success() throws JsonProcessingException {
         PersonWithGetter person = new PersonWithGetter("geon", "baek", 33);
         PersonWithGetter emptyPerson = new PersonWithGetter();
 
@@ -28,7 +28,7 @@ class TestObjectWithGetter {
     }
 
     @Test
-    void given_objectContainsGetter_when_serializeWithFailOnEmptyBeansTrue_then_success() throws JsonProcessingException {
+    void given_objectWithGetter_when_serializeWithFailOnEmptyBeansTrue_then_success() throws JsonProcessingException {
         PersonWithGetter person = new PersonWithGetter("geon", "baek", 33);
         PersonWithGetter emptyPerson = new PersonWithGetter();
 

@@ -1,4 +1,4 @@
-package com.example.research.serialization;
+package com.example.research.deserialization;
 
 public class Person {
     private String firstName;
