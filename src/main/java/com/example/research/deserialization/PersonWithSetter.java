@@ -14,6 +14,7 @@ public class PersonWithSetter {
         this.age = age;
     }
 
+    // 중요! @JsonCreator를 쓰지 않을 경우 jackson은 먼저 기본생성자를 통해 빈 객체를 생성하므로 반드시 기본 생성자를 만들어줘야 한다.
     public PersonWithSetter() {
     }
 }

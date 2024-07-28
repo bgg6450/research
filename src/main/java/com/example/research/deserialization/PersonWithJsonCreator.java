@@ -4,9 +4,9 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class PersonWithJsonCreator {
-    private String firstName;
-    private String lastName;
-    private int age;
+    private final String firstName;
+    private final String lastName;
+    private final int age;
 
     @JsonCreator
     public PersonWithJsonCreator(@JsonProperty("first_name") String firstName,
